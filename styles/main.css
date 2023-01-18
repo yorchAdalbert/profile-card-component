@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* Reset Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Variables */
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 46%);
+}
+
+/* Typography */
+
+.user__age {
+    font-weight: normal;
+}
+
+.card__stats p {
+    font-size: .8em;
+}
+
+/* Card Section */
+
+.card {
+    width: 85%;
+    margin: auto;
+}
