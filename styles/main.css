@@ -19,8 +19,12 @@ html {
 body {
     align-items: center;
     background-color: var(--dark-cyan);
+    background-image: url(../img/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position: top 200%;
     display: flex;
-    font-size: 0.875rem;
+    font-size: 1rem;
     justify-content: center;
     min-height: 100vh;
 }
@@ -54,13 +58,17 @@ span {
     text-align: center;
 }
 
+.card__body p {
+    font-size: .8rem;
+}
+
 .user__age {
     font-weight: normal;
     margin-left: var(--general-margin);
 }
 
 .card__stats p {
-    font-size: .8em;
+    font-size: .6em;
     letter-spacing: 1px;
 }
 
@@ -72,23 +80,37 @@ span {
     width: 85%;
 }
 
-.card__banner img {
+.card__header {
+    background-image: url(../img/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    min-height: 130px;
+}
+
+.card__banner>* {
+    /* position: absolute; */
+}
+
+/*.card__banner img {
     border-top-left-radius: var(--radius);
     border-top-right-radius: var(--radius);
     width: 100%;
-}
+}*/
 
-.card__img img {
-    position: relative;
-    bottom: 3.5em;
+.card__banner img {
     border-radius: 50%;
     border: 5px solid #fff;
     margin: auto;
-    width: 30%;
+    max-width: 30%;
+    position: relative;
+    top: 80px;
 }
 
 .card__body {
     padding: var(--general-padding);
+    margin-top: 2.5em;
 }
 
 .user__name {
