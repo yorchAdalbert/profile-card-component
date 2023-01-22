@@ -16,6 +16,17 @@ html {
     color-scheme: dark light;
 }
 
+/* Variables */
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-gray: hsl(0, 0%, 46%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --general-padding: 2em;
+    --general-margin: .5em;
+    --radius: 15px;
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+}
+
 body {
     align-items: center;
     background-color: var(--dark-cyan);
@@ -34,18 +45,6 @@ svg {
     max-width: 100%;
 }
 
-
-/* Variables */
-:root {
-    --dark-cyan: hsl(185, 75%, 39%);
-    --dark-gray: hsl(0, 0%, 46%);
-    --dark-grayish-blue: hsl(227, 10%, 46%);
-    --general-padding: 2em;
-    --general-margin: .5em;
-    --radius: 15px;
-    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
-}
-
 /* Typography */
 
 h3,
@@ -59,16 +58,21 @@ span {
 
 .card__body p {
     font-size: .8rem;
+    color: var(--dark-gray);
+
 }
 
 .card__user--age {
     font-weight: normal;
     margin-left: var(--general-margin);
+    color: var(--dark-gray);
+
 }
 
 .card__stats p {
     font-size: .6em;
     letter-spacing: 1px;
+    color: var(--dark-gray);
 }
 
 /* Card Section */
@@ -109,7 +113,7 @@ span {
 }
 
 .card__footer {
-    border-top: .5px solid var(--dark-grayish-blue);
+    border-top: .1px solid rgb(219, 214, 214);
     display: flex;
     justify-content: space-evenly;
     padding: var(--general-padding);
