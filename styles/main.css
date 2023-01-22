@@ -30,9 +30,9 @@ html {
 body {
     align-items: center;
     background-color: var(--dark-cyan);
-    background-image: url(../img/bg-pattern-bottom.svg), url(../img/bg-pattern-top.svg);
+    background-image: url(../img/bg-pattern-top.svg), url(../img/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
-    background-position: top -350% right -30%, bottom -300% left -55%;
+    background-position: right 52vw bottom 34.5vh, left 48vw top 52vh;
     display: flex;
     font-size: 1rem;
     justify-content: center;
@@ -121,11 +121,4 @@ span {
 
 .card__stats p {
     margin-top: var(--general-margin);
-}
-
-@media (max-width: 376px) {
-    body {
-        background-image: url(../img/bg-pattern-top.svg), url(../img/bg-pattern-bottom.svg);
-        background-position: top 140% right -20%, top -60% left -10%;
-    }
 }
